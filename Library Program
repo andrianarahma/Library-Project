@@ -1,0 +1,42 @@
+Aplikasi ini adalah aplikasi yang pertama kali saya buat menggunakan Python sebagai ujian Capstone 1 dari kelas online Data Science yang saya ikuti di Purwadhika.
+Saya mengambil tema perpustakaan, dimana aplikasi ini ditujukan untuk petugas perpustakaan untuk membantu proses mendata buku-buku yang dipinjam dan dikembalikan serta lebih cepat untuk melacak buku-buku
+yang ada di perpustakaan.
+
+Saya mengambil sistem peminjaman buku untuk dibawa keluar dari perpustakaan dikhususkan untuk orang-orang yang sudah menjadi anggota perpustakaan, sehingga jika ada orang yang ingin meminjam buku untuk dibawa pulang
+tapi belum menjadi anggota, maka harus mendaftarkan diri menjadi anggota perpustakaan terlebih dahulu.
+
+Aplikasi ini menggunakan dua data induk, yaitu data setiap buku yang dimiliki oleh perpustakaan dan data seluruh anggota perpustakaan. Pada data setiap buku yang dimiliki oleh perpustakaan, terdapat identitas buku,
+yaitu berupa label yang disediakan oleh pihak perpustakaan, judul, penulis, ISBN bukunya, juga terdapat status peminjaman setiap buku. Untuk label, di sini saya men-generate labelnya menjadi huruf pertama pada genre buku,
+huruf pertama pada sub-genre buku, dipisahkan oleh tanda "-", letak buku tersebut disimpan, diikuti dengan tanda "-", ISBN buku tersebut, tanda "-", terakhir akan ada nomor dimana nomor ini dimulai dari 1 hingga
+banyaknya stok untuk buku dengan ISBN tersebut. Misalkan buku untuk ISBN A ada 5, maka digit terakhir di label dimulai dari nomor 1 hingga nomor 5.
+
+Untuk data seluruh anggota perpustakaan, akan ada identitas anggota, seperti nama, alamat, kontak, dan NIK, juga nomor anggota. Di sini saya men-generate nomor anggotanya dimulai dari nomor 131 dan akan terus berlanjut
+sesuai dengan urutan pendaftaran anggotanya.
+
+Aplikasi ini memiliki 8 menu utama, yaitu :
+  1. Menampilkan daftar buku, yang kemudian akan muncul sub-menu lagi, seperti gambar berikut.
+     ![image](https://github.com/user-attachments/assets/29421a0d-aa49-4bf5-8ef0-fbb7df03eae1)
+
+     Untuk sub-menu 1, kita dapat menginputkan judul buku yang ingin kita cari, sehingga akan muncul data buku yang judulnya sesuai dengan judul yang diinputkan.
+
+     Untuk sub-menu 2, akan tampil pilihan lagi, seperti pada gambar.
+     ![image](https://github.com/user-attachments/assets/8fe08c39-9fdf-4a13-9cdc-eb96f08c61a6)
+
+     Dimana kita bisa memilih ingin menampilkan buku-buku yang sedang dipinjam berdasarkan nomor anggotanya ataupun berdasarkan maksimal tanggal pengembaliannya. Diharapkan dengan adanya pilihan untuk
+     menampilkan data buku-buku yang harus dikembalikan pada tanggal yang diinputkan maka petugas perpustakaan bisa menghubungi atau melacak orang-orang yang harus mengembalikan buku pada tanggal tersebut.
+
+     Untuk sub-menu3, akan ditampilkan data koleksi buku perpustakaan dalam versi yang lebih singkatnya, dimana terdapat jumlah stok buku tersebut dan jumlah buku yang tersedia untuk dipinjam.
+
+  2. Menu untuk menambahkan koleksi buku
+  3. Menu untuk menghapus buku berdasarkan data koleksi buku yang ditampilkan
+  4. Menu untuk meminjam buku, dimana untuk meminjam buku ini, akan ada nomor anggota untuk memvalidasi apakah orang tersebut benar sudah terdaftar sebagai anggota atau belum.
+  5. Menu untuk mengembalikan buku, dimana untuk mengembalikan buku ini juga menggunakan validasi nomor anggota
+  6. Menu untuk mendaftarkan seseorang sebagai anggota perpustakaan
+  7. Menu untuk mengecek keanggotaan seseorang, dimana akan tampil sub-menu sebagai berikut.
+     ![image](https://github.com/user-attachments/assets/f0984b94-01a6-46e0-bfc7-80341907ac37)
+
+     Dimana di sub-menu 1, kita bisa mengakses data anggota menggunakan NIK anggota tersebut, sedangkan di sub-menu 2, kita bisa mengakses data seluruh anggota perpustakaan
+  8. Menu untuk keluar dari program
+
+
+     
